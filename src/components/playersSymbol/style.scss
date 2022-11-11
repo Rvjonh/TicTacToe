@@ -1,0 +1,83 @@
+@import './../../extraStyle/classes.scss';
+@import './../../extraStyle/vars.scss';
+
+.config{
+    width: 100%;
+    @extend .center-x;
+    position: relative;
+
+
+    .error-msj{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2em;
+        color: rgb(255, 3, 3);
+        background-color: rgb(234, 128, 128);
+        text-shadow: 0.05em 0.05em 0.05em black;
+        font-size: 1.5rem;
+        z-index: 2;
+        text-align: center;
+    }
+
+    .config-symbols{
+        @extend .center-x;
+        padding-bottom: 1em;
+        position: relative;
+
+        .positioner{
+            position: absolute;
+        width: 100%;
+        max-width: 6em;
+        height: 0.5em;
+        background-color: rgb(0, 76, 255);
+        bottom: 0.5em;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        left: 0;
+        }
+        .positioner.player1{
+            background-color: red;
+            animation: move-positioner1 0.25s linear forwards;
+        }
+        @keyframes move-positioner1 {
+            from{left: calc(100% - 6em);}
+            to{left: 0%;}
+        }
+        .positioner.player2{
+            background-color: rgb(0, 76, 255);
+            animation: move-positioner2 0.25s linear forwards;
+        }
+        @keyframes move-positioner2 {
+            from{left: 0%;}
+            to{left: calc(100% - 6em);}
+        }
+    }
+}
+
+.input-tag{
+    @extend .center-y;
+    align-items: flex-start;
+    font-size: 1.2rem;
+    font-family: $font;
+    max-width: 5em;
+
+    span{
+        color: $color;
+    }
+
+    input{
+        color: $color;
+        background-color: $bg;
+        font-size: inherit;
+        font-family: inherit;
+        width: 100%;
+        padding: 0.2em;
+        text-align: center;
+    }
+}
+.input-tag + .input-tag{
+    margin-left: 1em;
+}

@@ -1,0 +1,24 @@
+@import './../../extraStyle/animations.scss';
+@import './../../extraStyle/classes.scss';
+@import './../../extraStyle/vars.scss';
+
+.blockpanel{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(175, 175, 175, 0.347);
+    @extend .show-up;
+
+    @extend .center-y;
+    .final-msj{
+        background-color: $bg;
+        color: $color;
+        border: 0.4em solid $color;
+        padding: 1em;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}

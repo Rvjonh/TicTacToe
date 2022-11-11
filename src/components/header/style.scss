@@ -1,0 +1,18 @@
+@import './../../extraStyle/vars.scss';
+
+.header{
+    padding-top: 1rem;
+    h1{
+        font-size: 3rem;
+    }
+    
+    h1 span:nth-child(1){
+        color: rgb(226, 17, 17);
+    }
+    h1 span:nth-child(2){
+        color: $color;
+    }
+    h1 span:nth-child(3){
+        color: rgb(0, 115, 255);
+    }
+}

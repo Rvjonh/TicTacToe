@@ -1,0 +1,17 @@
+@import './../../extraStyle/classes.scss';
+@import './../../extraStyle/animations.scss';
+
+.controls{
+    @extend .center-y;
+    padding: 1rem 0;
+}
+.controls.shake{
+    @extend .bounce-item;
+}
+
+button.btn-green{
+    background-color: rgb(26, 238, 26);
+}
+button.btn-red{
+    background-color: rgb(225, 3, 3);
+}
