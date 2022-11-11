@@ -5,7 +5,7 @@ The project uses one of the most popular algorithms known, minmax is a algorithm
 
 ## Code Live Game
 
-Game Link: [Game live link](www.google.com)
+Game Link: [Game live link](https://rvjonh-tictactoe.netlify.app)
 
 ## Development
 
@@ -14,7 +14,7 @@ If you want to check the code, feel free to use as you want, license MIT :v or w
 1.Download the repository in your computer and prefered route
 
 ```bash
-    git clone ''
+    git clone https://github.com/Rvjonh/TicTacToe.git
 ```
 
 2.Install the dependencies
